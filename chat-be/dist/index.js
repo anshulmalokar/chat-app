@@ -17,11 +17,12 @@ const io = new socket_io_1.Server(server, {
     }
 });
 io.on('connection', socket => {
-    console.log('Connection established');
     socket.on('message', (data) => {
         console.log(data, " received...");
-        const re_msg = data + " sending back...";
-        socket.emit(re_msg);
+        const re_msg = data;
+        console.log(re_msg);
+        socket.broadcast.emit(re_msg);
+        console.log("broadcasting done " + re_msg);
     });
 });
 const PORT = process.env.PORT || 3002;
