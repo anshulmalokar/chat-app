@@ -16,7 +16,6 @@ export class TokenManager{
       sameSite: "strict",
       secure: false,
     });
-    return token;
   }
 
   public static validateToken(token: string):boolean{

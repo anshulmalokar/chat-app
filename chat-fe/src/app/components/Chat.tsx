@@ -8,24 +8,42 @@ type Props = {};
 export default function Chat({}: Props) {
   const [msg, setMsg] = useState("");
   const [socket, setSocket] = useState(null);
-  const [msgs, setMsgs] = useState<string[]>([]);
+  const [msgs, setMsgs] = useState<
+    {
+      text: string;
+      sentByCurrUser: boolean;
+    }[]
+  >([]);
 
   useEffect((): any => {
-    const web_socket = io("http://localhost:3002");
-    web_socket.on("chat msg", (data) => {
-      setMsgs((prev) => [...prev, data]);
-    });
+    const socketInstance = io("http://localhost:3002");
     // @ts-ignore
-    setSocket(web_socket);
-    return () => web_socket.close();
+    setSocket(socketInstance);
+    return () => {
+      if (socketInstance) {
+        socketInstance.disconnect();
+      }
+    };
   }, []);
+
+  useEffect(() => {
+    if (socket) {
+      // @ts-ignore
+      socket.on("chat_msg", (data) => {
+        setMsgs((prev) => [...prev, { text: data, sentByCurrUser: false }]);
+      });
+      console.log(msgs);
+    }
+  }, [socket]);
 
   const submitMessage = (e: any) => {
     e.preventDefault();
     if (socket) {
       // @ts-ignore
       socket.emit("message", msg);
-      setMsgs([...msgs, msg]);
+      setMsgs((prev) => {
+        return [...prev, { text: msg, sentByCurrUser: true }];
+      });
       setMsg("");
     }
   };
@@ -34,15 +52,22 @@ export default function Chat({}: Props) {
     <>
       <div className="h-screen flex flex-col">
         <div className="msgs-container h-4/5 overflow-scroll">
-          {msgs.map((val, index) => {
-            return (
-              <>
-                <div className="msg text-right m-5" key={index}>
-                  {val}
-                </div>
-              </>
-            );
-          })}
+          {msgs.map((msg, index) => (
+            <div
+              key={index}
+              className={` m-3 ${
+                msg.sentByCurrUser ? "text-right" : "text-left"
+              }`}
+            >
+              <span
+                className={`${
+                  msg.sentByCurrUser ? "bg-blue-200" : "bg-green-200"
+                } p-3 rounded-lg`}
+              >
+                {msg.text}
+              </span>
+            </div>
+          ))}
         </div>
         <div className="h1/5 flex items-center justify-center">
           <form onSubmit={submitMessage} className="w-[70%] mx-auto my-10">

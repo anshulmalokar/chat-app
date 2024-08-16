@@ -4,6 +4,7 @@ import http from 'http';
 import { Server } from "socket.io";
 dotenv.config();
 
+const PORT = process.env.PORT || 3002;
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server,{
@@ -17,13 +18,10 @@ io.on('connection', socket => {
     socket.on('message',(data) => {
         console.log(data," received...");
         const re_msg = data;
-        console.log(re_msg);
-        socket.broadcast.emit(re_msg);
+        socket.broadcast.emit('chat_msg',re_msg);
         console.log("broadcasting done " + re_msg);
     });
 });
-
-const PORT = process.env.PORT || 3002;
 
 app.get('/',(req,res) => {
     return res.json({
