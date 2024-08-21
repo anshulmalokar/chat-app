@@ -14,6 +14,8 @@ export default function page({}: Props) {
       const response = axios.post("http://localhost:3005/auth/signup", {
         username,
         password,
+      },{
+        withCredentials: true
       });
       const data = (await response).data;
       if (data.message === "User Signed Up Success") {

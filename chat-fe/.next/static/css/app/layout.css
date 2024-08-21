@@ -601,9 +601,6 @@ video {
 .flex {
   display: flex;
 }
-.h-10 {
-  height: 2.5rem;
-}
 .h-4\/5 {
   height: 80%;
 }
@@ -615,9 +612,6 @@ video {
 }
 .w-\[70\%\] {
   width: 70%;
-}
-.w-auto {
-  width: auto;
 }
 .w-full {
   width: 100%;

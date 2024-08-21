@@ -16,7 +16,11 @@ export default function Chat({}: Props) {
   >([]);
 
   useEffect((): any => {
-    const socketInstance = io("http://localhost:3002");
+    const socketInstance = io("http://localhost:3002",{
+      query:{
+        username: 'Anshul'
+      }
+    });
     // @ts-ignore
     setSocket(socketInstance);
     return () => {
@@ -40,7 +44,11 @@ export default function Chat({}: Props) {
     e.preventDefault();
     if (socket) {
       // @ts-ignore
-      socket.emit("message", msg);
+      socket.emit("message", {
+        sender: 'Anshul',
+        reciever: 'Akash',
+        text: msg
+      }); 
       setMsgs((prev) => {
         return [...prev, { text: msg, sentByCurrUser: true }];
       });

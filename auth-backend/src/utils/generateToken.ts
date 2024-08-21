@@ -18,9 +18,9 @@ export class TokenManager{
     });
   }
 
-  public static validateToken(token: string):boolean{
+  public static async validateToken(token: string):Promise<boolean>{
     try{
-      const validate = jsonwebtoken.verify(token,process.env.JWT_SECRET as string);
+      const validate = await jsonwebtoken.verify(token,process.env.JWT_SECRET as string);
       if(validate){
         return true;
       }

@@ -19,6 +19,8 @@ export default function page({}: Props) {
       const response = axios.post("http://localhost:3005/auth/login", {
         username,
         password,
+      },{
+        withCredentials: true
       });
       const data = (await response).data;
       console.log(data);
