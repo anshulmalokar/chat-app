@@ -25,3 +25,31 @@ export const signup = async (req: Request, res: Response) => {
     return res.status(500).json({ message: "Internal Server Error" });
   }
 };
+
+export const login = async (req: Request,res: Response) => {
+  try {
+    const { username, password } = req.body;
+    const user = await UserModel.findOne({ username });
+    if(!user){
+      return res.status(401).json({
+        message: "Auth Failed"
+      });
+    }
+    const isValidPassword = await bcrypt.compare(password, user.password || '');
+    if(!isValidPassword){
+      return res.status(401).json({
+        message: 'Auth Failed'
+      });
+    }
+    await TokenManager.generateTokenAndSetCookie(user._id.toString(),res);
+    return res.status(200).json({
+      _id: user._id,
+      username: user.username
+    });
+  }catch(e){
+    console.log(e);
+    return res.status(500).json({
+      message: "Login failed"
+    });
+  }
+}

@@ -89,105 +89,6 @@ module.exports = require("next/dist/compiled/next-server/app-page.runtime.dev.js
 
 /***/ }),
 
-/***/ "buffer":
-/*!*************************!*\
-  !*** external "buffer" ***!
-  \*************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("buffer");
-
-/***/ }),
-
-/***/ "child_process":
-/*!********************************!*\
-  !*** external "child_process" ***!
-  \********************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("child_process");
-
-/***/ }),
-
-/***/ "crypto":
-/*!*************************!*\
-  !*** external "crypto" ***!
-  \*************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("crypto");
-
-/***/ }),
-
-/***/ "events":
-/*!*************************!*\
-  !*** external "events" ***!
-  \*************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("events");
-
-/***/ }),
-
-/***/ "fs":
-/*!*********************!*\
-  !*** external "fs" ***!
-  \*********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("fs");
-
-/***/ }),
-
-/***/ "http":
-/*!***********************!*\
-  !*** external "http" ***!
-  \***********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("http");
-
-/***/ }),
-
-/***/ "https":
-/*!************************!*\
-  !*** external "https" ***!
-  \************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("https");
-
-/***/ }),
-
-/***/ "net":
-/*!**********************!*\
-  !*** external "net" ***!
-  \**********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("net");
-
-/***/ }),
-
-/***/ "os":
-/*!*********************!*\
-  !*** external "os" ***!
-  \*********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("os");
-
-/***/ }),
-
 /***/ "path":
 /*!***********************!*\
   !*** external "path" ***!
@@ -199,39 +100,6 @@ module.exports = require("path");
 
 /***/ }),
 
-/***/ "stream":
-/*!*************************!*\
-  !*** external "stream" ***!
-  \*************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("stream");
-
-/***/ }),
-
-/***/ "tls":
-/*!**********************!*\
-  !*** external "tls" ***!
-  \**********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("tls");
-
-/***/ }),
-
-/***/ "tty":
-/*!**********************!*\
-  !*** external "tty" ***!
-  \**********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("tty");
-
-/***/ }),
-
 /***/ "url":
 /*!**********************!*\
   !*** external "url" ***!
@@ -240,48 +108,6 @@ module.exports = require("tty");
 
 "use strict";
 module.exports = require("url");
-
-/***/ }),
-
-/***/ "util":
-/*!***********************!*\
-  !*** external "util" ***!
-  \***********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("util");
-
-/***/ }),
-
-/***/ "zlib":
-/*!***********************!*\
-  !*** external "zlib" ***!
-  \***********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("zlib");
-
-/***/ }),
-
-/***/ "?32c4":
-/*!****************************!*\
-  !*** bufferutil (ignored) ***!
-  \****************************/
-/***/ (() => {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ "?66e9":
-/*!********************************!*\
-  !*** utf-8-validate (ignored) ***!
-  \********************************/
-/***/ (() => {
-
-/* (ignored) */
 
 /***/ }),
 
@@ -316,24 +142,24 @@ eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__w
 
 /***/ }),
 
-/***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22%2FUsers%2Fanshulmalokar%2FDesktop%2FCode%2FHHLD%2Fchat-app%2Fchat-fe%2Fsrc%2Fapp%2Fcomponents%2FChat.tsx%22%2C%22ids%22%3A%5B%22default%22%5D%7D&server=true!":
-/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22%2FUsers%2Fanshulmalokar%2FDesktop%2FCode%2FHHLD%2Fchat-app%2Fchat-fe%2Fsrc%2Fapp%2Fcomponents%2FChat.tsx%22%2C%22ids%22%3A%5B%22default%22%5D%7D&server=true! ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22%2FUsers%2Fanshulmalokar%2FDesktop%2FCode%2FHHLD%2Fchat-app%2Fchat-fe%2Fsrc%2Fapp%2Fpage.tsx%22%2C%22ids%22%3A%5B%5D%7D&server=true!":
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22%2FUsers%2Fanshulmalokar%2FDesktop%2FCode%2FHHLD%2Fchat-app%2Fchat-fe%2Fsrc%2Fapp%2Fpage.tsx%22%2C%22ids%22%3A%5B%5D%7D&server=true! ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./src/app/components/Chat.tsx */ \"(ssr)/./src/app/components/Chat.tsx\"));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWZsaWdodC1jbGllbnQtZW50cnktbG9hZGVyLmpzP21vZHVsZXM9JTdCJTIycmVxdWVzdCUyMiUzQSUyMiUyRlVzZXJzJTJGYW5zaHVsbWFsb2thciUyRkRlc2t0b3AlMkZDb2RlJTJGSEhMRCUyRmNoYXQtYXBwJTJGY2hhdC1mZSUyRnNyYyUyRmFwcCUyRmNvbXBvbmVudHMlMkZDaGF0LnRzeCUyMiUyQyUyMmlkcyUyMiUzQSU1QiUyMmRlZmF1bHQlMjIlNUQlN0Qmc2VydmVyPXRydWUhIiwibWFwcGluZ3MiOiJBQUFBLHNLQUFxSiIsInNvdXJjZXMiOlsid2VicGFjazovL2NoYXQtZmUvP2JhODMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0KC8qIHdlYnBhY2tNb2RlOiBcImVhZ2VyXCIsIHdlYnBhY2tFeHBvcnRzOiBbXCJkZWZhdWx0XCJdICovIFwiL1VzZXJzL2Fuc2h1bG1hbG9rYXIvRGVza3RvcC9Db2RlL0hITEQvY2hhdC1hcHAvY2hhdC1mZS9zcmMvYXBwL2NvbXBvbmVudHMvQ2hhdC50c3hcIik7XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22%2FUsers%2Fanshulmalokar%2FDesktop%2FCode%2FHHLD%2Fchat-app%2Fchat-fe%2Fsrc%2Fapp%2Fcomponents%2FChat.tsx%22%2C%22ids%22%3A%5B%22default%22%5D%7D&server=true!\n");
+eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./src/app/page.tsx */ \"(ssr)/./src/app/page.tsx\"));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWZsaWdodC1jbGllbnQtZW50cnktbG9hZGVyLmpzP21vZHVsZXM9JTdCJTIycmVxdWVzdCUyMiUzQSUyMiUyRlVzZXJzJTJGYW5zaHVsbWFsb2thciUyRkRlc2t0b3AlMkZDb2RlJTJGSEhMRCUyRmNoYXQtYXBwJTJGY2hhdC1mZSUyRnNyYyUyRmFwcCUyRnBhZ2UudHN4JTIyJTJDJTIyaWRzJTIyJTNBJTVCJTVEJTdEJnNlcnZlcj10cnVlISIsIm1hcHBpbmdzIjoiQUFBQSxnSkFBNkciLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9jaGF0LWZlLz8zZGQ1Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJlYWdlclwiICovIFwiL1VzZXJzL2Fuc2h1bG1hbG9rYXIvRGVza3RvcC9Db2RlL0hITEQvY2hhdC1hcHAvY2hhdC1mZS9zcmMvYXBwL3BhZ2UudHN4XCIpO1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22%2FUsers%2Fanshulmalokar%2FDesktop%2FCode%2FHHLD%2Fchat-app%2Fchat-fe%2Fsrc%2Fapp%2Fpage.tsx%22%2C%22ids%22%3A%5B%5D%7D&server=true!\n");
 
 /***/ }),
 
-/***/ "(ssr)/./src/app/components/Chat.tsx":
-/*!*************************************!*\
-  !*** ./src/app/components/Chat.tsx ***!
-  \*************************************/
+/***/ "(ssr)/./src/app/page.tsx":
+/*!**************************!*\
+  !*** ./src/app/page.tsx ***!
+  \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Chat)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! socket.io-client */ \"(ssr)/./node_modules/socket.io-client/build/esm-debug/index.js\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\nfunction Chat({}) {\n    const [msg, setMsg] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(\"\");\n    const [socket, setSocket] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);\n    const [msgs, setMsgs] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        const socketInstance = (0,socket_io_client__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\"http://localhost:3002\");\n        // @ts-ignore\n        setSocket(socketInstance);\n        return ()=>{\n            if (socketInstance) {\n                socketInstance.disconnect();\n            }\n        };\n    }, []);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        if (socket) {\n            // @ts-ignore\n            socket.on(\"chat_msg\", (data)=>{\n                setMsgs((prev)=>[\n                        ...prev,\n                        {\n                            text: data,\n                            sentByCurrUser: false\n                        }\n                    ]);\n            });\n            console.log(msgs);\n        }\n    }, [\n        socket\n    ]);\n    const submitMessage = (e)=>{\n        e.preventDefault();\n        if (socket) {\n            // @ts-ignore\n            socket.emit(\"message\", msg);\n            setMsgs((prev)=>{\n                return [\n                    ...prev,\n                    {\n                        text: msg,\n                        sentByCurrUser: true\n                    }\n                ];\n            });\n            setMsg(\"\");\n        }\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            className: \"h-screen flex flex-col\",\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    className: \"msgs-container h-4/5 overflow-scroll\",\n                    children: msgs.map((msg, index)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                            className: ` m-3 ${msg.sentByCurrUser ? \"text-right\" : \"text-left\"}`,\n                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                                className: `${msg.sentByCurrUser ? \"bg-blue-200\" : \"bg-green-200\"} p-3 rounded-lg`,\n                                children: msg.text\n                            }, void 0, false, {\n                                fileName: \"/Users/anshulmalokar/Desktop/Code/HHLD/chat-app/chat-fe/src/app/components/Chat.tsx\",\n                                lineNumber: 62,\n                                columnNumber: 15\n                            }, this)\n                        }, index, false, {\n                            fileName: \"/Users/anshulmalokar/Desktop/Code/HHLD/chat-app/chat-fe/src/app/components/Chat.tsx\",\n                            lineNumber: 56,\n                            columnNumber: 13\n                        }, this))\n                }, void 0, false, {\n                    fileName: \"/Users/anshulmalokar/Desktop/Code/HHLD/chat-app/chat-fe/src/app/components/Chat.tsx\",\n                    lineNumber: 54,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    className: \"h1/5 flex items-center justify-center\",\n                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"form\", {\n                        onSubmit: submitMessage,\n                        className: \"w-[70%] mx-auto my-10\",\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                            className: \"relative\",\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                                    type: \"text\",\n                                    value: msg,\n                                    onChange: (e)=>setMsg(e.target.value),\n                                    placeholder: \"Type your text here\",\n                                    required: true,\n                                    className: \"block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/anshulmalokar/Desktop/Code/HHLD/chat-app/chat-fe/src/app/components/Chat.tsx\",\n                                    lineNumber: 75,\n                                    columnNumber: 15\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                                    type: \"submit\",\n                                    className: \"text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800\",\n                                    children: \"Send\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/anshulmalokar/Desktop/Code/HHLD/chat-app/chat-fe/src/app/components/Chat.tsx\",\n                                    lineNumber: 85,\n                                    columnNumber: 15\n                                }, this)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/Users/anshulmalokar/Desktop/Code/HHLD/chat-app/chat-fe/src/app/components/Chat.tsx\",\n                            lineNumber: 74,\n                            columnNumber: 13\n                        }, this)\n                    }, void 0, false, {\n                        fileName: \"/Users/anshulmalokar/Desktop/Code/HHLD/chat-app/chat-fe/src/app/components/Chat.tsx\",\n                        lineNumber: 73,\n                        columnNumber: 11\n                    }, this)\n                }, void 0, false, {\n                    fileName: \"/Users/anshulmalokar/Desktop/Code/HHLD/chat-app/chat-fe/src/app/components/Chat.tsx\",\n                    lineNumber: 72,\n                    columnNumber: 9\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"/Users/anshulmalokar/Desktop/Code/HHLD/chat-app/chat-fe/src/app/components/Chat.tsx\",\n            lineNumber: 53,\n            columnNumber: 7\n        }, this)\n    }, void 0, false);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvYXBwL2NvbXBvbmVudHMvQ2hhdC50c3giLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUMwQjtBQUNrQjtBQUNWO0FBSW5CLFNBQVNJLEtBQUssRUFBUztJQUNwQyxNQUFNLENBQUNDLEtBQUtDLE9BQU8sR0FBR0wsK0NBQVFBLENBQUM7SUFDL0IsTUFBTSxDQUFDTSxRQUFRQyxVQUFVLEdBQUdQLCtDQUFRQSxDQUFDO0lBQ3JDLE1BQU0sQ0FBQ1EsTUFBTUMsUUFBUSxHQUFHVCwrQ0FBUUEsQ0FLOUIsRUFBRTtJQUVKQyxnREFBU0EsQ0FBQztRQUNSLE1BQU1TLGlCQUFpQlIsNERBQUVBLENBQUM7UUFDMUIsYUFBYTtRQUNiSyxVQUFVRztRQUNWLE9BQU87WUFDTCxJQUFJQSxnQkFBZ0I7Z0JBQ2xCQSxlQUFlQyxVQUFVO1lBQzNCO1FBQ0Y7SUFDRixHQUFHLEVBQUU7SUFFTFYsZ0RBQVNBLENBQUM7UUFDUixJQUFJSyxRQUFRO1lBQ1YsYUFBYTtZQUNiQSxPQUFPTSxFQUFFLENBQUMsWUFBWSxDQUFDQztnQkFDckJKLFFBQVEsQ0FBQ0ssT0FBUzsyQkFBSUE7d0JBQU07NEJBQUVDLE1BQU1GOzRCQUFNRyxnQkFBZ0I7d0JBQU07cUJBQUU7WUFDcEU7WUFDQUMsUUFBUUMsR0FBRyxDQUFDVjtRQUNkO0lBQ0YsR0FBRztRQUFDRjtLQUFPO0lBRVgsTUFBTWEsZ0JBQWdCLENBQUNDO1FBQ3JCQSxFQUFFQyxjQUFjO1FBQ2hCLElBQUlmLFFBQVE7WUFDVixhQUFhO1lBQ2JBLE9BQU9nQixJQUFJLENBQUMsV0FBV2xCO1lBQ3ZCSyxRQUFRLENBQUNLO2dCQUNQLE9BQU87dUJBQUlBO29CQUFNO3dCQUFFQyxNQUFNWDt3QkFBS1ksZ0JBQWdCO29CQUFLO2lCQUFFO1lBQ3ZEO1lBQ0FYLE9BQU87UUFDVDtJQUNGO0lBRUEscUJBQ0U7a0JBQ0UsNEVBQUNrQjtZQUFJQyxXQUFVOzs4QkFDYiw4REFBQ0Q7b0JBQUlDLFdBQVU7OEJBQ1poQixLQUFLaUIsR0FBRyxDQUFDLENBQUNyQixLQUFLc0Isc0JBQ2QsOERBQUNIOzRCQUVDQyxXQUFXLENBQUMsS0FBSyxFQUNmcEIsSUFBSVksY0FBYyxHQUFHLGVBQWUsWUFDckMsQ0FBQztzQ0FFRiw0RUFBQ1c7Z0NBQ0NILFdBQVcsQ0FBQyxFQUNWcEIsSUFBSVksY0FBYyxHQUFHLGdCQUFnQixlQUN0QyxlQUFlLENBQUM7MENBRWhCWixJQUFJVyxJQUFJOzs7Ozs7MkJBVk5XOzs7Ozs7Ozs7OzhCQWVYLDhEQUFDSDtvQkFBSUMsV0FBVTs4QkFDYiw0RUFBQ0k7d0JBQUtDLFVBQVVWO3dCQUFlSyxXQUFVO2tDQUN2Qyw0RUFBQ0Q7NEJBQUlDLFdBQVU7OzhDQUNiLDhEQUFDTTtvQ0FDQ0MsTUFBSztvQ0FDTEMsT0FBTzVCO29DQUNQNkIsVUFBVSxDQUFDYixJQUNUZixPQUFPZSxFQUFFYyxNQUFNLENBQUNGLEtBQUs7b0NBRXZCRyxhQUFZO29DQUNaQyxRQUFRO29DQUNSWixXQUFVOzs7Ozs7OENBRVosOERBQUNhO29DQUNDTixNQUFLO29DQUNMUCxXQUFVOzhDQUNYOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQVNmIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vY2hhdC1mZS8uL3NyYy9hcHAvY29tcG9uZW50cy9DaGF0LnRzeD83YmMxIl0sInNvdXJjZXNDb250ZW50IjpbIlwidXNlIGNsaWVudFwiO1xuaW1wb3J0IFJlYWN0IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCB9IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IGlvIGZyb20gXCJzb2NrZXQuaW8tY2xpZW50XCI7XG5cbnR5cGUgUHJvcHMgPSB7fTtcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQ2hhdCh7fTogUHJvcHMpIHtcbiAgY29uc3QgW21zZywgc2V0TXNnXSA9IHVzZVN0YXRlKFwiXCIpO1xuICBjb25zdCBbc29ja2V0LCBzZXRTb2NrZXRdID0gdXNlU3RhdGUobnVsbCk7XG4gIGNvbnN0IFttc2dzLCBzZXRNc2dzXSA9IHVzZVN0YXRlPFxuICAgIHtcbiAgICAgIHRleHQ6IHN0cmluZztcbiAgICAgIHNlbnRCeUN1cnJVc2VyOiBib29sZWFuO1xuICAgIH1bXVxuICA+KFtdKTtcblxuICB1c2VFZmZlY3QoKCk6IGFueSA9PiB7XG4gICAgY29uc3Qgc29ja2V0SW5zdGFuY2UgPSBpbyhcImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMlwiKTtcbiAgICAvLyBAdHMtaWdub3JlXG4gICAgc2V0U29ja2V0KHNvY2tldEluc3RhbmNlKTtcbiAgICByZXR1cm4gKCkgPT4ge1xuICAgICAgaWYgKHNvY2tldEluc3RhbmNlKSB7XG4gICAgICAgIHNvY2tldEluc3RhbmNlLmRpc2Nvbm5lY3QoKTtcbiAgICAgIH1cbiAgICB9O1xuICB9LCBbXSk7XG5cbiAgdXNlRWZmZWN0KCgpID0+IHtcbiAgICBpZiAoc29ja2V0KSB7XG4gICAgICAvLyBAdHMtaWdub3JlXG4gICAgICBzb2NrZXQub24oXCJjaGF0X21zZ1wiLCAoZGF0YSkgPT4ge1xuICAgICAgICBzZXRNc2dzKChwcmV2KSA9PiBbLi4ucHJldiwgeyB0ZXh0OiBkYXRhLCBzZW50QnlDdXJyVXNlcjogZmFsc2UgfV0pO1xuICAgICAgfSk7XG4gICAgICBjb25zb2xlLmxvZyhtc2dzKTtcbiAgICB9XG4gIH0sIFtzb2NrZXRdKTtcblxuICBjb25zdCBzdWJtaXRNZXNzYWdlID0gKGU6IGFueSkgPT4ge1xuICAgIGUucHJldmVudERlZmF1bHQoKTtcbiAgICBpZiAoc29ja2V0KSB7XG4gICAgICAvLyBAdHMtaWdub3JlXG4gICAgICBzb2NrZXQuZW1pdChcIm1lc3NhZ2VcIiwgbXNnKTtcbiAgICAgIHNldE1zZ3MoKHByZXYpID0+IHtcbiAgICAgICAgcmV0dXJuIFsuLi5wcmV2LCB7IHRleHQ6IG1zZywgc2VudEJ5Q3VyclVzZXI6IHRydWUgfV07XG4gICAgICB9KTtcbiAgICAgIHNldE1zZyhcIlwiKTtcbiAgICB9XG4gIH07XG5cbiAgcmV0dXJuIChcbiAgICA8PlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJoLXNjcmVlbiBmbGV4IGZsZXgtY29sXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXNncy1jb250YWluZXIgaC00LzUgb3ZlcmZsb3ctc2Nyb2xsXCI+XG4gICAgICAgICAge21zZ3MubWFwKChtc2csIGluZGV4KSA9PiAoXG4gICAgICAgICAgICA8ZGl2XG4gICAgICAgICAgICAgIGtleT17aW5kZXh9XG4gICAgICAgICAgICAgIGNsYXNzTmFtZT17YCBtLTMgJHtcbiAgICAgICAgICAgICAgICBtc2cuc2VudEJ5Q3VyclVzZXIgPyBcInRleHQtcmlnaHRcIiA6IFwidGV4dC1sZWZ0XCJcbiAgICAgICAgICAgICAgfWB9XG4gICAgICAgICAgICA+XG4gICAgICAgICAgICAgIDxzcGFuXG4gICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgJHtcbiAgICAgICAgICAgICAgICAgIG1zZy5zZW50QnlDdXJyVXNlciA/IFwiYmctYmx1ZS0yMDBcIiA6IFwiYmctZ3JlZW4tMjAwXCJcbiAgICAgICAgICAgICAgICB9IHAtMyByb3VuZGVkLWxnYH1cbiAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgIHttc2cudGV4dH1cbiAgICAgICAgICAgICAgPC9zcGFuPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgKSl9XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImgxLzUgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXJcIj5cbiAgICAgICAgICA8Zm9ybSBvblN1Ym1pdD17c3VibWl0TWVzc2FnZX0gY2xhc3NOYW1lPVwidy1bNzAlXSBteC1hdXRvIG15LTEwXCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJlbGF0aXZlXCI+XG4gICAgICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgICAgIHR5cGU9XCJ0ZXh0XCJcbiAgICAgICAgICAgICAgICB2YWx1ZT17bXNnfVxuICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZTogUmVhY3QuQ2hhbmdlRXZlbnQ8SFRNTElucHV0RWxlbWVudD4pID0+XG4gICAgICAgICAgICAgICAgICBzZXRNc2coZS50YXJnZXQudmFsdWUpXG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIHBsYWNlaG9sZGVyPVwiVHlwZSB5b3VyIHRleHQgaGVyZVwiXG4gICAgICAgICAgICAgICAgcmVxdWlyZWRcbiAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJibG9jayB3LWZ1bGwgcC00IHBzLTEwIHRleHQtc20gdGV4dC1ncmF5LTkwMCBib3JkZXIgYm9yZGVyLWdyYXktMzAwIHJvdW5kZWQtbGcgYmctZ3JheS01MCBmb2N1czpyaW5nLWJsdWUtNTAwIGZvY3VzOmJvcmRlci1ibHVlLTUwMCBkYXJrOmJnLWdyYXktNzAwIGRhcms6Ym9yZGVyLWdyYXktNjAwIGRhcms6cGxhY2Vob2xkZXItZ3JheS00MDAgZGFyazp0ZXh0LXdoaXRlIGRhcms6Zm9jdXM6cmluZy1ibHVlLTUwMCBkYXJrOmZvY3VzOmJvcmRlci1ibHVlLTUwMFwiXG4gICAgICAgICAgICAgIC8+XG4gICAgICAgICAgICAgIDxidXR0b25cbiAgICAgICAgICAgICAgICB0eXBlPVwic3VibWl0XCJcbiAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJ0ZXh0LXdoaXRlIGFic29sdXRlIGVuZC0yLjUgYm90dG9tLTIuNSBiZy1ibHVlLTcwMCBob3ZlcjpiZy1ibHVlLTgwMCBmb2N1czpyaW5nLTQgZm9jdXM6b3V0bGluZS1ub25lIGZvY3VzOnJpbmctYmx1ZS0zMDAgZm9udC1tZWRpdW0gcm91bmRlZC1sZyB0ZXh0LXNtIHB4LTQgcHktMiBkYXJrOmJnLWJsdWUtNjAwIGRhcms6aG92ZXI6YmctYmx1ZS03MDAgZGFyazpmb2N1czpyaW5nLWJsdWUtODAwXCJcbiAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgIFNlbmRcbiAgICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8L2Zvcm0+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC8+XG4gICk7XG59XG4iXSwibmFtZXMiOlsiUmVhY3QiLCJ1c2VTdGF0ZSIsInVzZUVmZmVjdCIsImlvIiwiQ2hhdCIsIm1zZyIsInNldE1zZyIsInNvY2tldCIsInNldFNvY2tldCIsIm1zZ3MiLCJzZXRNc2dzIiwic29ja2V0SW5zdGFuY2UiLCJkaXNjb25uZWN0Iiwib24iLCJkYXRhIiwicHJldiIsInRleHQiLCJzZW50QnlDdXJyVXNlciIsImNvbnNvbGUiLCJsb2ciLCJzdWJtaXRNZXNzYWdlIiwiZSIsInByZXZlbnREZWZhdWx0IiwiZW1pdCIsImRpdiIsImNsYXNzTmFtZSIsIm1hcCIsImluZGV4Iiwic3BhbiIsImZvcm0iLCJvblN1Ym1pdCIsImlucHV0IiwidHlwZSIsInZhbHVlIiwib25DaGFuZ2UiLCJ0YXJnZXQiLCJwbGFjZWhvbGRlciIsInJlcXVpcmVkIiwiYnV0dG9uIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./src/app/components/Chat.tsx\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/navigation */ \"(ssr)/./node_modules/next/dist/api/navigation.js\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\nfunction Home() {\n    const router = (0,next_navigation__WEBPACK_IMPORTED_MODULE_1__.useRouter)();\n    router.push(\"/auth\");\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {}, void 0, false);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvYXBwL3BhZ2UudHN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7O0FBQzRDO0FBQzdCLFNBQVNDO0lBQ3RCLE1BQU1DLFNBQVNGLDBEQUFTQTtJQUN4QkUsT0FBT0MsSUFBSSxDQUFDO0lBQ1oscUJBQ0U7QUFHSiIsInNvdXJjZXMiOlsid2VicGFjazovL2NoYXQtZmUvLi9zcmMvYXBwL3BhZ2UudHN4P2Y2OGEiXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2UgY2xpZW50XCJcbmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gXCJuZXh0L25hdmlnYXRpb25cIjtcbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEhvbWUoKSB7XG4gIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpO1xuICByb3V0ZXIucHVzaChcIi9hdXRoXCIpO1xuICByZXR1cm4gKFxuICAgIDw+XG4gICAgPC8+XG4gICk7XG59XG4iXSwibmFtZXMiOlsidXNlUm91dGVyIiwiSG9tZSIsInJvdXRlciIsInB1c2giXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./src/app/page.tsx\n");
 
 /***/ }),
 
@@ -345,35 +171,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"d88dc6b14989\");\nif (false) {}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9zcmMvYXBwL2dsb2JhbHMuY3NzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxjQUFjO0FBQzdCLElBQUksS0FBVSxFQUFFLEVBQXVCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vY2hhdC1mZS8uL3NyYy9hcHAvZ2xvYmFscy5jc3M/OTZmMSJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBcImQ4OGRjNmIxNDk4OVwiXG5pZiAobW9kdWxlLmhvdCkgeyBtb2R1bGUuaG90LmFjY2VwdCgpIH1cbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(rsc)/./src/app/globals.css\n");
-
-/***/ }),
-
-/***/ "(rsc)/./src/app/components/Chat.tsx":
-/*!*************************************!*\
-  !*** ./src/app/components/Chat.tsx ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   $$typeof: () => (/* binding */ $$typeof),
-/* harmony export */   __esModule: () => (/* binding */ __esModule),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
-
-const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/anshulmalokar/Desktop/Code/HHLD/chat-app/chat-fe/src/app/components/Chat.tsx`)
-
-// Accessing the __esModule property and exporting $$typeof are required here.
-// The __esModule getter forces the proxy target to create the default export
-// and the $$typeof value is for rendering logic to determine if the module
-// is a client boundary.
-const { __esModule, $$typeof } = proxy;
-const __default__ = proxy.default;
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/anshulmalokar/Desktop/Code/HHLD/chat-app/chat-fe/src/app/components/Chat.tsx#default`));
-
 
 /***/ }),
 
@@ -395,7 +192,25 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(rsc)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_Chat__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Chat */ \"(rsc)/./src/app/components/Chat.tsx\");\n\n\nfunction Home() {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_Chat__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {}, void 0, false, {\n                fileName: \"/Users/anshulmalokar/Desktop/Code/HHLD/chat-app/chat-fe/src/app/page.tsx\",\n                lineNumber: 7,\n                columnNumber: 9\n            }, this)\n        }, void 0, false, {\n            fileName: \"/Users/anshulmalokar/Desktop/Code/HHLD/chat-app/chat-fe/src/app/page.tsx\",\n            lineNumber: 6,\n            columnNumber: 7\n        }, this)\n    }, void 0, false);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9zcmMvYXBwL3BhZ2UudHN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7O0FBQ3FDO0FBQ3RCLFNBQVNDO0lBQ3RCLHFCQUNFO2tCQUNFLDRFQUFDQztzQkFDQyw0RUFBQ0Ysd0RBQUlBOzs7Ozs7Ozs7OztBQUliIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vY2hhdC1mZS8uL3NyYy9hcHAvcGFnZS50c3g/ZjY4YSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSW1hZ2UgZnJvbSBcIm5leHQvaW1hZ2VcIjtcbmltcG9ydCBDaGF0IGZyb20gXCIuL2NvbXBvbmVudHMvQ2hhdFwiO1xuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSG9tZSgpIHtcbiAgcmV0dXJuIChcbiAgICA8PlxuICAgICAgPGRpdj5cbiAgICAgICAgPENoYXQvPlxuICAgICAgPC9kaXY+XG4gICAgPC8+XG4gICk7XG59XG4iXSwibmFtZXMiOlsiQ2hhdCIsIkhvbWUiLCJkaXYiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./src/app/page.tsx\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   $$typeof: () => (/* binding */ $$typeof),
+/* harmony export */   __esModule: () => (/* binding */ __esModule),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
+
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/anshulmalokar/Desktop/Code/HHLD/chat-app/chat-fe/src/app/page.tsx`)
+
+// Accessing the __esModule property and exporting $$typeof are required here.
+// The __esModule getter forces the proxy target to create the default export
+// and the $$typeof value is for rendering logic to determine if the module
+// is a client boundary.
+const { __esModule, $$typeof } = proxy;
+const __default__ = proxy.default;
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/anshulmalokar/Desktop/Code/HHLD/chat-app/chat-fe/src/app/page.tsx#default`));
+
 
 /***/ }),
 
@@ -417,7 +232,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/engine.io-client","vendor-chunks/ws","vendor-chunks/socket.io-client","vendor-chunks/engine.io-parser","vendor-chunks/debug","vendor-chunks/socket.io-parser","vendor-chunks/@socket.io","vendor-chunks/xmlhttprequest-ssl","vendor-chunks/supports-color","vendor-chunks/ms","vendor-chunks/has-flag"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.tsx&appDir=%2FUsers%2Fanshulmalokar%2FDesktop%2FCode%2FHHLD%2Fchat-app%2Fchat-fe%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fanshulmalokar%2FDesktop%2FCode%2FHHLD%2Fchat-app%2Fchat-fe&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.tsx&appDir=%2FUsers%2Fanshulmalokar%2FDesktop%2FCode%2FHHLD%2Fchat-app%2Fchat-fe%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fanshulmalokar%2FDesktop%2FCode%2FHHLD%2Fchat-app%2Fchat-fe&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();
