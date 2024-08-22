@@ -7,20 +7,16 @@ import { useUsersStore } from "../zustand/userStore";
 import { useReciverStore } from "../zustand/userReciverStore";
 import axios from "axios";
 import ChatUsers from "./ChatUsers";
+import { useChatMsgsStore } from "../zustand/useMsgStore";
 type Props = {};
 
 export default function Chat({}: Props) {
   const [msg, setMsg] = useState("");
   const [socket, setSocket] = useState(null);
-  const [msgs, setMsgs] = useState<
-    {
-      text: string;
-      sentByCurrUser: boolean;
-    }[]
-  >([]);
   const { authName } = useAuthStore();
   const { updateUsers } = useUsersStore();
   const { reciver_name } = useReciverStore();
+  const {chatMsgs,updateChatMsgs} = useChatMsgsStore();
 
   const getUsers = async () => {
     const response = await axios.get("http://localhost:3005/users", {
@@ -52,8 +48,12 @@ export default function Chat({}: Props) {
   useEffect(() => {
     if (socket) {
       // @ts-ignore
-      socket.on("chat_msg", (data) => {
-        setMsgs((prev) => [...prev, { text: data, sentByCurrUser: false }]);
+      socket.on("chat_msg", (data: {
+        text: string;
+        sender: string;
+        reciever: string;
+    }) => {
+        updateChatMsgs([...chatMsgs,data]);
       });
     }
   }, [socket]);
@@ -62,15 +62,14 @@ export default function Chat({}: Props) {
     e.preventDefault();
     console.log(authName);
     if (socket) {
-      // @ts-ignore
-      socket.emit("message", {
+      const message_to_be_emitted = {
         sender: authName,
         reciever: reciver_name,
         text: msg,
-      });
-      setMsgs((prev) => {
-        return [...prev, { text: msg, sentByCurrUser: true }];
-      });
+      }
+      // @ts-ignore
+      socket.emit("message",message_to_be_emitted);
+      updateChatMsgs([...chatMsgs,message_to_be_emitted]);
       setMsg("");
     }
   };
@@ -86,16 +85,16 @@ export default function Chat({}: Props) {
             {authName} is chatting with {reciver_name}
           </div>
           <div className="msgs-container h-4/5 overflow-scroll">
-            {msgs.map((msg, index) => (
+            {chatMsgs.map((msg, index) => (
               <div
                 key={index}
                 className={` m-3 ${
-                  msg.sentByCurrUser ? "text-right" : "text-left"
+                  authName === msg.sender ? "text-right" : "text-left"
                 }`}
               >
                 <span
                   className={`${
-                    msg.sentByCurrUser ? "bg-blue-200" : "bg-green-200"
+                    authName === msg.sender ? "bg-blue-200" : "bg-green-200"
                   } p-3 rounded-lg`}
                 >
                   {msg.text}
