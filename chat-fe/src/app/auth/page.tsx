@@ -2,11 +2,13 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import { authState,useAuthStore } from "../zustand/useAuthStore";
 type Props = {};
 
 export default function page({}: Props) {
   const [username, setUsername] = useState<string>();
   const [password, setPassword] = useState<string>();
+  const {updateAuthName} = useAuthStore();
   const router = useRouter();
   const submitFunction = async (e: any) => {
     e.preventDefault();
@@ -19,6 +21,7 @@ export default function page({}: Props) {
       });
       const data = (await response).data;
       if (data.message === "User Signed Up Success") {
+        updateAuthName(username as string );
         router.push("/chat");
       } else {
         alert("Username already exists");
