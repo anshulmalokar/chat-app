@@ -1,28 +1,28 @@
 services:
   chat-be-1:
-    image: chat-be:v1
+    image: anshulmalokar/chat-be:v1
     container_name: chat-be-1
     ports:
       - 3002:3002
     networks:
       - chat-ne
   chat-be-2:
-    image: chat-be:v1
-    container_name: chat-be:v1
+    image: anshulmalokar/chat-be:v1
+    container_name: chat-be-2
     ports:
       - 3003:3002
     networks:
       - chat-ne
   auth-auth-1:
-    image: chat-auth:v1
-    container_name: chat-auth:v1
+    image: anshulmalokar/chat-auth:v1
+    container_name: chat-auth-1
     ports:
       - 3005:3005
     networks:
       - chat-ne
   chat-fe-1:
-    image: chat-fe:v1
-    container_name: chat-fe:v1
+    image: anshulmalokar/chat-fe:v1
+    container_name: chat-fe-1
     ports:
       - 3000:3000
     depends_on:
@@ -30,8 +30,8 @@ services:
     networks:
       - chat-ne
   chat-fe-2:
-    image: chat-fe:v1
-    container_name: chat-fe:v1
+    image: anshulmalokar/chat-fe:v2
+    container_name: chat-fe-2
     ports:
       - 3001:3000
     depends_on:
