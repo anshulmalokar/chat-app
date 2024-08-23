@@ -7,8 +7,14 @@ class RedisManager {
   private subscribe_client: Redis;
   private publish_client: Redis;
   private constructor() {
-    this.subscribe_client = new Redis();
-    this.publish_client = new Redis();
+    this.subscribe_client = new Redis({
+      host: process.env.REDIS_HOST as string,
+      port: 6379,
+    });
+    this.publish_client = new Redis({
+      host: process.env.REDIS_HOST as string,
+      port: 6379,
+    });
   }
 
   public check(){

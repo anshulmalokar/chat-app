@@ -1,18 +1,43 @@
 services:
+  redis_service:
+    image: redis:latest
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli ping | grep PONG"]
+      interval: 1s
+      timeout: 3s
+      retries: 5
+    command: ["redis-server"]
+    networks:
+      chat-ne:
+        aliases:
+          - redis
+
   chat-be-1:
-    image: anshulmalokar/chat-be:v1
+    image: anshulmalokar/chat-be:v3
     container_name: chat-be-1
     ports:
       - 3002:3002
     networks:
       - chat-ne
+    environment:
+      - REDIS_HOST=redis
+    depends_on:
+      redis_service:
+        condition: service_healthy
+
   chat-be-2:
-    image: anshulmalokar/chat-be:v1
+    image: anshulmalokar/chat-be:v3
     container_name: chat-be-2
     ports:
       - 3003:3002
     networks:
       - chat-ne
+    environment:
+      - REDIS_HOST=redis
+    depends_on:
+      redis_service:
+        condition: service_healthy
+
   auth-auth-1:
     image: anshulmalokar/chat-auth:v1
     container_name: chat-auth-1
@@ -20,6 +45,7 @@ services:
       - 3005:3005
     networks:
       - chat-ne
+
   chat-fe-1:
     image: anshulmalokar/chat-fe:v1
     container_name: chat-fe-1
@@ -29,6 +55,7 @@ services:
       - chat-be-1
     networks:
       - chat-ne
+      
   chat-fe-2:
     image: anshulmalokar/chat-fe:v2
     container_name: chat-fe-2
