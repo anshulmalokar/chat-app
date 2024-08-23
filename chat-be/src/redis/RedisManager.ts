@@ -1,26 +1,22 @@
 import dotenv from "dotenv";
 dotenv.config();
-import Redis, { Callback } from "ioredis";
+import Redis from "ioredis";
 
-export class RedisManager {
+class RedisManager {
   private static _instance: RedisManager;
   private subscribe_client: Redis;
   private publish_client: Redis;
   private constructor() {
-    this.subscribe_client = new Redis({
-      host: process.env.REDIS_HOST as string,
-      port: process.env.REDIS_PORT as unknown as number,
-      password: process.env.REDIS_PWD as string,
-      username: process.env.REDIS_USER as string,
-      tls: {},
-    });
-    this.publish_client = new Redis({
-      host: process.env.REDIS_HOST as string,
-      port: process.env.REDIS_PORT as unknown as number,
-      password: process.env.REDIS_PWD as string,
-      username: process.env.REDIS_USER as string,
-      tls: {},
-    });
+    this.subscribe_client = new Redis();
+    this.publish_client = new Redis();
+  }
+
+  public check(){
+    if(this.publish_client === undefined){
+      console.log('Connection not happened');
+    }else{
+      console.log('Connection happened');
+    }
   }
 
   public static getInstance(): RedisManager {
@@ -31,20 +27,26 @@ export class RedisManager {
   }
 
   public getPublisher() {
-    return this.publish_client;
+    if(this.publish_client){
+      return this.publish_client;
+    }
+    console.log("No Publisher Client Found");
   }
 
   public getSubscriber() {
-    return this.subscribe_client;
+    if(this.subscribe_client){
+      return this.subscribe_client;
+    }
+    console.log("No Subscriber");
   }
 
   public subscribe(channel: string, callback: (message: string) => void) {
-    this.subscribe_client.subscribe(channel, (err, count) => {
+    this.subscribe_client.subscribe(channel, (err) => {
       if (err) {
         console.log("Error while subscribing to " + channel);
-      } else {
-        console.log("Subscribed to channel");
+        return;
       }
+      console.log("Subscribed to channel " + channel);
     });
 
     this.subscribe_client.on(
@@ -72,12 +74,19 @@ export class RedisManager {
     });
   }
 
-  public async publish(channel:string,message:string){
-    try{
-        await this.getPublisher().publish(channel,message);
-        console.log("Message published to channel " + channel + "message " + message);
-    }catch(e){
-        console.log("Error while publishing message to channel " + channel + "message" + message);
+  public async publish(channel: string, message: string) {
+    try {
+      const publisher = this.getPublisher();
+      if (publisher !== undefined) {
+        await publisher.publish(channel, message);
+        console.log("Message published to channel " + channel + " message " + message);
+      } else {
+        console.log("Publisher is not defined, cannot publish message to channel " + channel);
+      }
+    } catch (e) {
+      console.log("Error while publishing message to channel " + channel + " message " + message);
     }
   }
 }
+
+export default RedisManager;
